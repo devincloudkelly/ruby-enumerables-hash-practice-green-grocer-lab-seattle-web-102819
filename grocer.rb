@@ -33,10 +33,10 @@ def apply_coupons(cart, coupons)
       elsif cart[item][:count] >= coupon[:num] && cart.has_key?(discount_item)
           cart[discount_item][:count] += coupon[:num]
           cart[item][:count] -= coupon[:num]
+        end
     end
   end
   cart
-end
 end
 
 =begin def apply_clearance(cart)
