@@ -18,7 +18,7 @@ def consolidate_cart(cart)
  end
 
 
-=begin def apply_coupons(cart, coupons)
+def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     item = coupon[:item]
     discount_item = "#{item} W/COUPON"
@@ -36,7 +36,7 @@ def consolidate_cart(cart)
     end
   end
   cart
-=end end
+end
 
 =begin def apply_clearance(cart)
   # code here
